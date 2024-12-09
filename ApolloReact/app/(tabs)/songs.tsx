@@ -54,20 +54,20 @@ export default function SongsScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#f0f0f0',
     padding: 20,
   },
   headerText: {
     fontSize: 24,
     fontWeight: 'bold',
-    color: '#fff85d',
+    color: '#f0f0f0',
     marginBottom: 20,
   },
   songList: {
     width: '100%',
   },
   songItem: {
-    backgroundColor: '#4adfb6',
+    backgroundColor: '#485779',
     padding: 15,
     marginBottom: 10,
     borderRadius: 10,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   songTitle: {
     fontSize: 18,
     fontWeight: '500',
-    color: '#25292e',
+    color: '#fff',
   },
   viewChordsButton: {
     marginTop: 10,

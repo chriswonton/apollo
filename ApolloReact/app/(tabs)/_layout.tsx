@@ -5,15 +5,15 @@ export default function TabLayout() {
   return (
     <Tabs
         screenOptions={{
-            tabBarActiveTintColor: '#00b2b6',
-            tabBarInactiveTintColor: '#1a1a1a',
+            tabBarActiveTintColor: '#485779',
+            tabBarInactiveTintColor: '1a1a1a',
             headerStyle: {
-                backgroundColor: '#fff85d',
+                backgroundColor: '#fa8667',
             },
             headerShadowVisible: false,
             headerTintColor: '#1a1a1a',
             tabBarStyle: {
-                backgroundColor: '#fff85d',
+                backgroundColor: '#fa8667',
             },
         }}
     >
@@ -41,6 +41,15 @@ export default function TabLayout() {
                 title: 'Songs',
                 tabBarIcon: ({ color, focused }) => (
                 <Ionicons name={focused ? 'musical-notes' : 'musical-notes-outline'} color={color} size={24}/>
+            ),
+            }}
+        />
+        <Tabs.Screen
+            name="subscriptions"
+            options={{
+                title: 'Subscriptions',
+                tabBarIcon: ({ color, focused }) => (
+                <Ionicons name={focused ? 'diamond' : 'diamond-outline'} color={color} size={24}/>
             ),
             }}
         />

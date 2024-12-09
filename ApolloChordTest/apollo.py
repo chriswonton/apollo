@@ -52,7 +52,7 @@ class ChordAnalyzerGUI:
         time_frame = ttk.Frame(main_frame)
         time_frame.grid(row=1, column=0, sticky=(tk.W, tk.E), pady=(0, 10))
         ttk.Label(time_frame, text="Time Signature:").grid(row=0, column=0, padx=(0, 5))
-        self.time_sig_var = tk.StringVar(value="12/8")  # Default to 12/8 for Chopin's Nocturne
+        self.time_sig_var = tk.StringVar(value="4/4")  # Default to 4/4 
         time_sig_combo = ttk.Combobox(time_frame, textvariable=self.time_sig_var, 
                                     values=list(self.time_signatures.keys()),
                                     state="readonly", width=10)

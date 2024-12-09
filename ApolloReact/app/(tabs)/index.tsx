@@ -7,21 +7,15 @@ export default function Index() {
   
   return (
     <View style={styles.container}>
-      <Ionicons name="musical-notes" size={80} color="#fff85d" />
+      <Ionicons name="musical-notes" size={80} color="#fa8667" />
       <Text style={styles.title}>Apollo</Text>
-      <Text style={styles.subtitle}>Discover the chords behind the music</Text>
+      <Text style={styles.subtitle}>Discover the chords behind the music.</Text>
 
       <TouchableOpacity style={styles.button} onPress={() => router.push('/listen')}>
         <Text style={styles.buttonText}>Start Listening</Text>
       </TouchableOpacity>
 
       <View style={styles.linkContainer}>
-        {/* <Link href="/about" style={styles.link}>
-          Learn More
-        </Link> */}
-        {/* <Link href="/settings" style={styles.link}>
-          Settings
-        </Link> */}
         <Link href="/songs" style={styles.link}>
           Popular Songs
         </Link>
@@ -33,7 +27,7 @@ export default function Index() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#f0f0f0',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -41,17 +35,17 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: '#fff85d',
+    color: '#fa8667',
     marginVertical: 10,
   },
   subtitle: {
     fontSize: 18,
-    color: '#cccccc',
+    color: '#1a1a1a',
     textAlign: 'center',
     marginBottom: 30,
   },
   button: {
-    backgroundColor: '#00b2b6',
+    backgroundColor: '#485779',
     paddingVertical: 15,
     paddingHorizontal: 30,
     borderRadius: 25,
@@ -59,7 +53,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     fontSize: 18,
-    color: '#1a1a1a',
+    color: '#fff',
     fontWeight: '600',
   },
   linkContainer: {
@@ -68,7 +62,7 @@ const styles = StyleSheet.create({
   },
   link: {
     fontSize: 16,
-    color: '#fff85d',
+    color: '#fa8667',
     textDecorationLine: 'underline',
     marginHorizontal: 10,
   },
